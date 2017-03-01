@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+        android:weightSum="160"
+        android:background="@drawable/background">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time up"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView"
+            android:textSize="60dip"
+            android:adjustViewBounds="true"
+            android:layout_weight="30"
+            android:layout_gravity="center"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your score"
+            android:textSize="22dip"
+            android:adjustViewBounds="true"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView2"
+            android:layout_weight="10"
+            android:layout_gravity="left|center_vertical"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Questions attempted"
+            android:layout_weight="10"
+            android:textColor="#FFFFFF"
+            android:textSize="22dip"
+            android:adjustViewBounds="true"
+            android:id="@+id/textView3"
+            android:layout_gravity="left|center_vertical"
+            />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Correct answers"
+
+            android:textColor="#FFFFFF"
+            android:textSize="22dip"
+            android:adjustViewBounds="true"
+            android:id="@+id/textView4"
+            android:layout_weight="10"
+            android:layout_gravity="left|center_vertical"
+            />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Rank:"
+            android:textSize="22dip"
+            android:adjustViewBounds="true"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView5"
+            android:layout_weight="10"
+            android:layout_gravity="left|center_vertical"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="View all scores"
+            android:id="@+id/viewbt"
+            android:onClick="viewscore"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="main menu"
+            android:textColor="#FFFFFF"
+            android:id="@+id/mainbt"
+            android:onClick="mainmenu"
+            android:gravity="center"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="exit"
+            android:textColor="#FFFFFF"
+            android:id="@+id/extbt"
+            android:onClick="exit"
+            android:background="@drawable/buttons"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+           />
+
+</LinearLayout>

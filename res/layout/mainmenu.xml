@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:gravity="center"
+                android:weightSum="120"
+                android:background="@drawable/background"
+        >
+
+    <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="music trivia"
+            android:textSize="60sp"
+            android:adjustViewBounds="true"
+            android:layout_weight="20"
+            android:textColor="#FFFFFF"
+            android:id="@+id/title"
+           />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Play!"
+            android:id="@+id/play"
+            android:onClick="play"
+            android:textColor="#FFFFFF"
+            android:layout_weight="20"
+            android:background="@drawable/buttons"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:id="@+id/inst"
+            android:layout_weight="20"
+            android:background="@drawable/buttons"
+            android:textColor="#FFFFFF"
+            android:onClick="inst"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:background="@drawable/buttons"
+            android:textColor="#FFFFFF"
+            android:id="@+id/highscr"
+            android:layout_weight="20"
+            android:onClick="highscore"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:background="@drawable/buttons"
+            android:textColor="#FFFFFF"
+            android:id="@+id/abt"
+            android:layout_weight="20"
+            android:onClick="about"
+            />
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            android:background="@drawable/buttons"
+            android:id="@+id/exit"
+            android:onClick="exitgame"
+            android:layout_weight="20"
+            android:textColor="#FFFFFF"
+            />
+
+</LinearLayout>

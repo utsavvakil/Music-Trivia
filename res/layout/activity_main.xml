@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ScrollView01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background">
+
+
+
+
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/pausebutton"
+            android:id="@+id/button"
+            android:gravity="center_vertical"
+            android:onClick="startDialog"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentLeft="true"/>
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:fillViewport="false"
+            android:id="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/slide">
+
+        <RelativeLayout
+                android:id="@+id/Relative"
+                android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+
+                android:layout_gravity="center"
+                android:layout_below="@+id/button"
+                android:layout_alignParentLeft="true">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity = "center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Question"
+                    android:id="@+id/textView"
+                    android:textColor="#FFFFFF"
+                    android:textSize="60dip"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"/>
+
+
+            <Button
+                    android:id="@+id/button1"
+                    android:onClick="opt1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:background="@drawable/buttons"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:paddingLeft="15dip"
+                    android:layout_marginTop="2mm"
+                    android:paddingRight="15dip"
+                    android:freezesText="true"
+                    android:gravity = "center"
+                    android:alpha="1"
+
+                    android:text="A. Party Rock Anthem"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic|bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textView"/>
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:background="@drawable/buttons"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:freezesText="true"
+                    android:gravity = "center"
+                    android:alpha="1"
+
+                    android:text="B. Sexy And I Know It"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic|bold"
+                    android:id="@+id/button2"
+                    android:layout_below="@+id/button1"
+                    android:onClick="opt2"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:freezesText="true"
+                    android:gravity = "center"
+                    android:alpha="1"
+                    android:background="@drawable/buttons"
+
+                    android:text="B. Sexy And I Know It"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="italic|bold"
+                    android:id="@+id/button3"
+                    android:onClick="opt3"
+                    android:layout_below="@+id/button2"
+                    android:layout_alignRight="@+id/button1"
+                    android:layout_marginTop="11dp"
+
+                    />
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:format=" %s"
+            android:textSize="40dp"
+            android:textColor="#0060ff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Score:"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:id="@+id/displayscore"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/scrollView"
+            android:layout_alignParentTop="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-00:02"
+            android:textSize="40dp"
+            android:textColor="#000000"
+            android:id="@+id/slide"
+            android:layout_below="@+id/chronometer"
+            android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

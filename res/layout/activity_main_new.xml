@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="45.81"
+        android:gravity="center"
+        android:text="Music Trivia"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/btInst"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Instruction"
+        
+         />
+	<TextView
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+       android:weightSum="50" >
+
+        <ImageButton
+            android:id="@+id/btHighScore"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1.65"
+            android:text="High Score"
+            />
+
+        <ImageButton
+            android:id="@+id/btPlay"
+            android:layout_width="wrap_content"
+            
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="46.7"
+            android:text="Play" />
+
+        <ImageButton
+            android:id="@+id/btAbout"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="About" 
+            android:layout_weight="1.65"
+            />
+    </LinearLayout>
+<TextView
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/btExit"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Exit"
+        android:layout_weight="10" 
+        />
+
+</LinearLayout>
